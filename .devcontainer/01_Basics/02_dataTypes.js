@@ -51,3 +51,32 @@ console.log(typeof myFunction);
 
 
 
+// Stack memory and Heap memory are two types of memories
+
+// Primitive uses Stack Memory
+// Non Primitive uses Heap Memory
+
+let myYoutubeName = "AffaanQureshi.com"
+
+let anotherName = myYoutubeName
+anotherName = "NotAffaan"
+
+console.log(myYoutubeName);
+console.log(anotherName); //Stack overflow only changes the copy not the OG data
+
+let userOne = {
+    email: "user@google.com",
+    anotherName: "NotAffaan",
+} //Heap gives the OG value reference directly
+
+let userTwo = userOne
+userTwo.email = "user2@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email); //both will give the same value...
+
+/* 
+Primitive value only gives the copy (Stack Memory)
+Non-Primitive value gives the OG referce not the copy (Heap Memory)
+*/
+
