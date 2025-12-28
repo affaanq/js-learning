@@ -22,5 +22,32 @@ let isLoggedIn = false
 
 console.log(typeof null); //object
 
+//Primitive:
+// 7 types: String, Number, boolean, null, undefined, Symbol, BigInt.
+// JavaScript is a dynamically typed language.
+
+const id = Symbol("123")
+const anotherId = Symbol("123")
+console.log(id === anotherId)
+
+// Reference Type/ Non-Primitive
+// Arrays, Objects, Functions. 
+
+const heroes = ["ironman", "captainamerica", "doctorstrange"] //Arrays
+
+let myObj = {
+    name: "Affaan",
+    age: 18,
+
+}
+//Object Eg
+
+const myFunction = function(){
+    console.log("Hello World");
+
+} //Functions
+
+console.log(typeof myFunction);
+
 
 
