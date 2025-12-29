@@ -25,11 +25,3 @@ console.log(newDate.getDay);
 newDate.toLocaleString('default', {
     weekday: "long",
 }) // Customization of the Locale string..
-
-
-
-
-
-
-
-
