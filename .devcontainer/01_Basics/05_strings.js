@@ -6,7 +6,7 @@ console.log(`Hello my name is ${Name} and my repo count is ${repoCount}`); //Mor
 
 const gameName = new String("AffaanHC")
 console.log(gameName[0]);
-console.log(gameName.__proto__); //
+console.log(gameName.__proto__); // It will give all the possible prototype of that func
 
 
 console.log(gameName.length); //Will print the length of the string
