@@ -48,4 +48,34 @@ console.log(Object.keys(tinderUser));
 console.log(Object.entries(tinderUser)); // Returns an array of key/values of the enumerable own properties of an object
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); // TO check if the given property is in the object
+ //Object destructuring
+const course = {
+
+    coursename: "Learn python",
+    price: "20p",
+    courseIntructor: "Affaan"
+}
+
+const {courseIntructor: instructor} = course
+console.log(instructor); // We can aswell rename the value of the object
+
+// API: it the value that comes from the backend, the value comes in JSON..
+
+// {
+//     "name": "Affaan",
+//     "coursename": "DS in python",
+//     "price": "Free", //Cannot be written as this as it is a format for Object
+
+// }
+
+
+//API also comes in the format of an Arrays
+
+// [
+// {},
+// {},
+// {},
+// ]
+
+// There are tools to convert the API to a data like JSON Formater..
 
