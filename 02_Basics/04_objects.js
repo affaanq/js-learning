@@ -48,6 +48,8 @@ console.log(Object.keys(tinderUser));
 console.log(Object.entries(tinderUser)); // Returns an array of key/values of the enumerable own properties of an object
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); // TO check if the given property is in the object
+
+
  //Object destructuring
 const course = {
 
