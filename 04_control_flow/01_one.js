@@ -50,12 +50,24 @@ const balance = 1000
 
  const userLoggedIn = true
  const debitCard = true
- 
+ const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
  if (userLoggedIn && debitCard) {
     console.log("Allow to buy");
     
  }
- //&& will check both the conditions
+
+ if (loggedInFromGoogle || loggedInFromEmail) {
+    console.log("Allow to buy");
+    
+ }
+ // && will check both the conditions, if any of the statement be false, it will  not be able to move on
+ // || will check for either of the statment be true..
+
+ 
+
+
 
 
 
