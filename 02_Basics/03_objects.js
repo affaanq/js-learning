@@ -22,7 +22,7 @@ console.log(JsUser["email"]);
 console.log(JsUser[mySym]); // Not a symbol type if not typed wih []
 
 JsUser.email = "qureshi@gmail.com"
-// Object.freeze(JsUser) // Will not allow any changs to the given object
+// Object.freeze(JsUser) // Will not allow any changes to the given object
 
 JsUser.greeting = function(){
 

@@ -36,10 +36,3 @@ console.log("B ", myArr);
 const myn2 = myArr.splice(1, 3)
 console.log("C ", myArr);
 console.log(myn2); //It will includes the the last domain in the range and it manipulates the orignal array aswell..
-
-
-
-
-
-
-

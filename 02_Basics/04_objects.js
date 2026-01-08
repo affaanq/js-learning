@@ -20,7 +20,7 @@ const regularUser = {
 }
 
 console.log(regularUser.fullname?.userfullname); // We can access to as much as deep we want in a nesting by just adding "."
-//"?" is added if the current waanted value is not there so it does not through an error
+//"?" is added if the current wanted value is not there so it does not throw an error
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -80,4 +80,3 @@ console.log(instructor); // We can aswell rename the value of the object
 // ]
 
 // There are tools to convert the API to a data like JSON Formater..
-

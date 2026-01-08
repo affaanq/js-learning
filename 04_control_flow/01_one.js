@@ -64,10 +64,3 @@ const loggedInFromEmail = true
  }
  // && will check both the conditions, if any of the statement be false, it will  not be able to move on
  // || will check for either of the statment be true..
-
- 
-
-
-
-
-
