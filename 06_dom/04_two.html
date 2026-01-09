@@ -5,7 +5,7 @@
     <title>DOM manipulation</title>
 </head>
 <body style="background-color: #212121; color: #ffff;">
-    <div class=""parent">
+    <div class="parent">
      <div class="day">Monday</div>
      <div class="day">Tuesday</div>
      <div class="day">Wednesday</div>
@@ -14,7 +14,33 @@
     </div>
     
 </body>
-<scipt>
-    <document class="querySelector"></document>
-</scipt>
+<script>
+    const parent = document.querySelector(".parent")
+    console.log(parent);
+    console.log(parent.children)
+    console.log(parent.children[1].innerHTML) // Get the content of the wanted child
+    console.log(parent.children[1]) // To access the firt element in the child
+
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+        
+    }
+    parent.children[1].style.color = "orange"
+    console.log(parent.firstElementChild)
+    console.log(parent.lastElementChild) //To target first or the last element
+
+    const dayOne = document.querySelector(".day")
+    console.log(dayOne);
+    console.log(dayOne.parentElement); // to track the parent of the given child
+    console.log(dayOne.nextElementSibling); // to track the sibling
+
+    // very important
+    console.log("NODES: ", parent.childNodes); // every element have significant value in nodes list
+    
+    
+    
+    
+    
+
+</script>
 </html>
