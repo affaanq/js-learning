@@ -16,11 +16,40 @@
     function addLanguage(langName) {
         const li = document.createElement("li")
         li.innerHTML = `${lang}`
-        document.querySelector(".language").appendChild(li)
+        document.querySelector(".language").appendChild(li) // it is a longer process and causes optimization issue with the js
+
 
 
     }
     addLanguage("python")
     addLanguage("typescript")
+
+    function addOptiLanguage(langName) {
+        const li = li.createElement("li");
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(li)
+    } // more optimized way of dioing the same work in the line 19
+
+    addOptiLanguage('goLang')
+
+    // Edit
+    //method 1 
+    const secondLang = document.querySelector("li:nth-child(2)")
+    secondLang.innerHTML = "Mojo" // not an optimized approach
+    //method 2
+    const newLi = document.createElement("li")
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newLi) // more of an optimkized way of doing the same problem, just puts less pressure on the system..
+
+    //method 3
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>TypeScript</li>"
+
+
+    //Removing
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
 </script>
 </html>
