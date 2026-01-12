@@ -21,3 +21,14 @@ function maskEmail(email) {
   // 5. Combine and return the final string
   return firstChar + mask + lastChar + domain;
 }
+
+// Requirement: Declare the variable outside the function
+let email = "apple.pie@example.com";
+
+// Requirement: Call the function and log the output
+console.log(maskEmail(email));
+
+// Additional Test Cases
+console.log(maskEmail("freecodecamp@example.com")); 
+console.log(maskEmail("info@test.dev"));           
+console.log(maskEmail("user@domain.org"));
