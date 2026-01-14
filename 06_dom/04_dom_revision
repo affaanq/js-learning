@@ -1,0 +1,13 @@
+// 1. Create the element
+const newDiv = document.createElement('div');
+
+// 2. Add properties
+newDiv.classList.add('container');
+newDiv.textContent = 'Hello, Affaan!';
+
+// 3. Append to the DOM
+document.body.appendChild(newDiv);
+
+// Removing
+const oldElement = document.querySelector('.old');
+oldElement.remove(); // Direct removal
