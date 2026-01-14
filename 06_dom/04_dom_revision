@@ -19,3 +19,17 @@ btn.addEventListener('click', (event) => {
     console.log('Button clicked!');
     console.log(event.target); // The element that triggered the event
 });
+
+document.querySelector('#parent-list').addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
+        e.target.style.textDecoration = 'line-through';
+    }
+});
+
+const fragment = document.createDocumentFragment();
+for (let i = 0; i < 1000; i++) {
+    const li = document.createElement('li');
+    li.textContent = `Item ${i}`;
+    fragment.appendChild(li);
+}
+document.querySelector('ul').appendChild(fragment); // Only ONE reflow
