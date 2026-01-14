@@ -11,3 +11,11 @@ document.body.appendChild(newDiv);
 // Removing
 const oldElement = document.querySelector('.old');
 oldElement.remove(); // Direct removal
+
+const btn = document.querySelector('#submit-btn');
+
+// The standard syntax
+btn.addEventListener('click', (event) => {
+    console.log('Button clicked!');
+    console.log(event.target); // The element that triggered the event
+});
