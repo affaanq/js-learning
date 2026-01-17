@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: #212121">
+    
+</body>
+
+    <script>
+        const requestUrl = "https://api.gthub.com/users/hiteshchoudhary"
+
+        const xhr = new XMLHttpRequest(); // we use to recieve and send data via it..
+        // console.log(xhr.readyState);
+        xhr.open("GET", requestUrl) // takes two parameter, method and a string....it will not track the request continously
+        xhr.onreadystatechange = function (){
+
+            console.log(xhr.readyState);
+
+            if (xhr.readyState === 4) {
+                const data = JSON.parse(this.responseText) // it converts the string to the JSON type...
+                console.log(data.followers); // it will print all the log in details of thee user when readyState becomes 4
+            } // every time the response which comes from the url is in the form of a String and not the object.. so using data.followers does not work
+            
+        } 
+        xhr.send(); // this is very important as open() does not send the url on its own we have to type in send()
+
+    </script>
+</html>
