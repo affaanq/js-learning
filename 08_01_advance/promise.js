@@ -9,6 +9,7 @@ pending: initial state, neither fulfilled nor rejected.
 fulfilled: meaning that the operation was completed successfully.
 rejected: meaning that the operation failed.
 
+ERROR CODE 404: will come as a response for promise
 */
 
 const promiseOne = new Promise(function(resolve, reject) {
@@ -157,5 +158,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
     console.log(error);
     
-})
+}) // fetch makes a special que and it always calls faster then the earlier used timeout method... In short it is a VIP line...
+
+
 
