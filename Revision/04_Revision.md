@@ -22,3 +22,28 @@
 ## __proto__: The old, legacy way to access or set the prototype chain. You will see this in older codebases or browser consoles.
 
 ## Object.setPrototypeOf(): The modern, approved standard for inheritance.
+
+
+
+## ES6 Classes, Inheritance, and Static Methods
+#  ES6 Class Syntax
+- Before ES6, JavaScript used functions and prototypes to simulate classes. ES6 introduced the class keyword, which is essentially syntactic sugar over the existing prototype-based inheritance. It makes the code cleaner and more readable but works the same way "under the hood."
+
+## The constructor Method
+- The constructor is a special method used for initializing an object created with a class.
+
+- It is automatically called when you use the new keyword.
+
+- There can be only one constructor in a class.
+
+## Inheritance (extends and super)
+- extends: Used to create a child class (subclass) that inherits properties and methods from a parent class.
+
+- super: A keyword used inside the child class constructor to call the parent class's constructor. This is mandatory if you want to use this in the child constructor.
+
+## static Methods
+- Static methods belong to the class itself, not to the instances (objects) created from the class.
+
+- You cannot call a static method on an object (e.g., user.createId() will fail). You must call it on the class (e.g., User.createId()).
+
+- These are often used for utility functions.
