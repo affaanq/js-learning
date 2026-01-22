@@ -46,3 +46,57 @@
         .increase:hover { background: #51cf66; color: white; }
     </style>
 </head>
+
+<body>
+
+    <h1 id="value">0</h1>
+
+    <div class="btn-container">
+        <button class="decrease">Decrease</button>
+        <button class="reset">Reset</button>
+        <button class="increase">Increase</button>
+    </div>
+
+<script>
+    // 1. Set initial state
+    let count = 0;
+
+    // 2. Select elements
+    const value = document.querySelector("#value");
+    const btns = document.querySelectorAll("button");
+
+    // 3. Loop through all buttons to add listeners
+    // (Instead of selecting each button individually)
+    btns.forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+            // Get the class of the clicked button
+            const styles = e.currentTarget.classList;
+
+            // Logic to change the count variable
+            if (styles.contains("decrease")) {
+                count--;
+            } else if (styles.contains("increase")) {
+                count++;
+            } else {
+                count = 0;
+            }
+
+            // Logic to change the color
+            if (count > 0) {
+                value.style.color = "#51cf66"; // Green
+            }
+            if (count < 0) {
+                value.style.color = "#ff6b6b"; // Red
+            }
+            if (count === 0) {
+                value.style.color = "#222"; // Black
+            }
+
+            // Update the text
+            value.textContent = count;
+        });
+    });
+</script>
+
+</body>
+</html>
