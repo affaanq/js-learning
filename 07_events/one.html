@@ -44,26 +44,30 @@
         // alert("Owl Tapped")
          console.log("owl clicked");
          e.stopPropagation()
-     }, false) // the false is default, it is for event bubbling which is the industry default, True is 
+     }, false) // the false is default, it is for event bubbling which is the industry default, True is event caputuring 
+     // event bubbling: from bottom to top..First owl clicked be printed and then clicked inside the ul.. this is called event propagation.
     
+     // Event capturing is the opposite of event bubbling..
+
+
     // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation()
+    //     e.preventDefault(); // it will not take to the google url..
+    //     e.stopPropagation() // it will stop the execution
     //     console.log("google clicked");
     // }, false)
    
     
     document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
+        console.log(e.target.tagName); // distinguishes IMG from LI
+        if (e.target.tagName === 'IMG') { // will no remove all the images when li is clicked.
             console.log(e.target.id);
-            let removeIt = e.target.parentNode
+            let removeIt = e.target.parentNode // If we want to remove the parent of the target...
             removeIt.remove()
         }
     
         
     })
     
-    //removeIt.parentNode.removeChild(removeIt)
+    //removeIt.parentNode.removeChild(removeIt) this is an alternative to like 65
 </script>
 </html>

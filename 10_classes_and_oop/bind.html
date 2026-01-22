@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+
+    <button>Button Clicked!</button>
+    
+</body>
+<script>
+    class React {
+
+        constructor() {
+
+            this.library = "React"
+            this.server = "http://localhost:3000"
+
+            // REQUIREMENT:
+            
+            document
+            .querySelector("button")
+            .addEventListener("click", this.handleClick.bind(this)) // this will fix the server issue of not being printed to the console..
+        }
+
+        handleClick () {
+            console.log("Button is been Clicked"); 
+            console.log(this.server); // this will print undefined when the button is been clicked
+            console.log(this);
+            
+            
+        }
+
+    }
+
+    const app = new React()
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Affaan Qureshi</h1>
+    <button id="stop">Stop</button>
+
+
+</body>
+
+<script>
+
+    const sayName =  console.log("Affaan")
+    setTimeout(sayName, 2000) // it will neeed an Handler and timeout, handler is a callback a function without name...
+
+    const changeHeader = function(){
+        document.querySelector("h1").innerHTML = "I am the best"
+    }
+
+    const changeTheHeader = setTimeout(changeHeader, 1000)
+// it will do the task only ones not repeted like setInterval
+
+    // clearTimeout() it is used to stop the execution of the setTimeout function...It needs the refernce of which of the timeout we need to stop
+
+    document.querySelector("#stop").addEventListener("click", function(){
+        clearTimeout(changeTheHeader)
+    }) 
+
+</script>
+</html>
