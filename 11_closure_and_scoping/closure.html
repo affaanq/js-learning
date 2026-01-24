@@ -9,7 +9,7 @@
     <button id="orange">Orange</button>
     <button id="green">green</button>
 </body>
-<script>
+<!-- <script>
 
 function outer() {
     let name = "Mozilla";
@@ -46,6 +46,31 @@ function makeFunc() {
 
 const myFunc = makeFunc();
 myFunc();
+</script> -->
+
+<script>
+    //Repetetive way of doing the work, we are not following the DRY principal:
+
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = "orange";
+    // }
+
+    //     document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = "green";
+    // }
+
+    // / More practical way of doing it
+
+    function changeColor(color){
+       // document.body.style.backgroundColor = `${color}`; This wont work as it will give the color before even clicking it
+
+       return function () {
+
+        document.body.style.backgroundColor = `${color}`
+       } // this is the implementation of lexical scoping; if you know the closure and lexical scoping it is returning the function.....
+    }
+    document.getElementById("orange").onclick = changeColor("orange")
+    document.getElementById("green").onclick = changeColor("green")
 </script>
 
 
