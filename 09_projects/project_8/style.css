@@ -1,0 +1,78 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+mark {
+    background-color: #ffd700;
+    padding: 0 5px;
+}
+
+/* Textarea Styling */
+#text-input {
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    resize: none; /* Prevents users from breaking your layout */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+/* Active focus state */
+#text-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Character Count Text */
+#char-count {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+    width: 100%;
+    max-width: 500px;
+    text-align: right;
+}
+
+/* Error state - these are triggered by your JS */
+#text-input.limit-reached {
+    border-color: #ff4d4d !important;
+    animation: shake 0.2s ease-in-out 0s 2;
+}
+
+#char-count.limit-reached {
+    color: #ff4d4d;
+}
+
+/* Shake animation for feedback */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
