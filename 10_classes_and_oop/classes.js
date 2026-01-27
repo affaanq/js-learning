@@ -112,7 +112,7 @@ console.log(classroom instanceof UserParent); // true
 // Concept: Methods that belong to the Class, not the Object.
 // =======================================================================
 
-class UserStatic {
+class UserStatic { 
     constructor(username){
         this.username = username;
     }
