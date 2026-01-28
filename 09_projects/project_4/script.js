@@ -52,7 +52,7 @@ function validateGuess(guess){
         prevGuess.push(guess) // to put the previous guess value to the array  
         if (numGuess === 11) {
             displayGuess(guess)
-            displayMessage(`Game Over, Random number was ${random}`)
+            displayMessage(`Game Over, Random numbguesser was ${random}`)
             endGame(); // this will stop the user from further inputting, if the number of guesses are over
     }   else {
         displayGuess(guess)
