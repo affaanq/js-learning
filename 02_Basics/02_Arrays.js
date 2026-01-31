@@ -24,3 +24,21 @@ let score2 = 200
 let score3 = 300
 
 console.log(Array.of(score1, score2, score3)); // Will put the values in a defined Array
+
+
+// How Do You Get the Length for an Array, and How Can You Create an Empty Array of Fixed Length?
+
+// We can use among of these methods:
+
+const notFilledArray = new  Array(3)
+
+const fixedLengthArray = Array.from({ length: 5 });
+console.log(fixedLengthArray.length); // 5
+console.log(fixedLengthArray); // [undefined, undefined, undefined, undefined, undefined]
+
+// Method 2: 
+
+// If you want to create an array of specific length and fill it with a default value, you can use the Array.fill() method:
+
+const filledArray = new Array(3).fill(0);
+console.log(filledArray); // [0, 0, 0]
