@@ -9,8 +9,41 @@ const songArtist = document.getElementById("player-song-artist");
 
 // Data Array: A collection of objects. Think of this as your database.
 const allSongs = [
-  { id: 0, title: "Hello World", artist: "Rafael", duration: "0:23", src: "..." },
-  // ... rest of songs
+  {
+    id: 0,
+    title: "Hello World",
+    artist: "Rafael",
+    duration: "0:23",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/hello-world.mp3",
+  },
+  {
+    id: 1,
+    title: "In the Zone",
+    artist: "Rafael",
+    duration: "0:11",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/in-the-zone.mp3",
+  },
+  {
+    id: 2,
+    title: "Camper Cat",
+    artist: "Rafael",
+    duration: "0:21",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/camper-cat.mp3",
+  },
+  {
+    id: 3,
+    title: "Electronic",
+    artist: "Rafael",
+    duration: "0:15",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/electronic.mp3",
+  },
+  {
+    id: 4,
+    title: "Sailing Away",
+    artist: "Rafael",
+    duration: "0:22",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3",
+  },
 ];
 
 // The Web Audio API: This creates an invisible <audio> element in the browser's memory.
