@@ -1,10 +1,5 @@
 /* ==========================================================================
    PHASE 1: CACHING THE DOM
-   --------------------------------------------------------------------------
-   DEV THOUGHT: "I need to talk to the HTML. Every time I want to change text 
-   or hide a button, I need a reference to that element. I don't want to 
-   search the document 50 times, so I'll search once and save them in variables."
-   ==========================================================================
 */
 
 // Get the container where the cart items will be displayed
