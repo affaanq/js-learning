@@ -40,13 +40,13 @@ async function showWeather(city) {
   }
 
   // Show the weather display
-  weatherDisplay.classList.remove("hidden");
+  weatherDisplay.classList.remove("hidden"); // made a mistake here:
 
   // Location name
   document.getElementById("location").innerText = data.name || "N/A";
 
   // Weather icon
-  document.getElementById("weather-icon").src = data.weather[0].icon || "";
+  document.getElementById("weather-icon").src = data.weather[0].icon || ""; // made  a mistake here in data taking
 
   // Weather type (like "Clouds" or "Rain")
   document.getElementById("weather-main").innerText =
