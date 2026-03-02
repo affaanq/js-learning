@@ -32,7 +32,7 @@ async function showWeather(city) {
 
     // If getWeather fails or returns nothing, throw to trigger the catch block alert
     if (!weatherData) {
-      return "No data received";
+      throw new Error("No data received");
     }
     
     const temp = weatherData.main?.temp ?? "N/A";
