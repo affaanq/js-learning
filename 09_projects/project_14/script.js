@@ -35,6 +35,14 @@ const timeAgo = (timestamp) => {
   const hours = Math.floor(minutes / 60);
   const days = Math.floor(hours / 24);
 
+  /*
+  New Concept:
+  The reason we use new Date() for the now time is cause to be consistent with the code flow, we can use 
+  new Date.now() which returns a string, being superior
+  JS cannot subtract the object with the object in line No. 33 so it converts the object to the
+  number, this process is called "Implicit Type Coercion"
+  */
+
   // Conditional logic for granular time units
   if (minutes < 60) return `${minutes}m ago`;
   if (hours < 24) return `${hours}h ago`;
