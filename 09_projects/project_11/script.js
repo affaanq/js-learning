@@ -169,7 +169,12 @@ const highlightCurrentSong = () => {
   previousCurrentSong?.removeAttribute("aria-current");
   const songToHighlight = document.getElementById(`song-${userData.currentSong?.id}`);
   songToHighlight?.setAttribute("aria-current", "true");
+
 };
+
+//The "aria-current" element is very important as it tell the user which song they are 
+// currently listening to.
+// So, the highlight current song basicaly transform the highlight of the prev song to the new song that is been played as of now. 
 
 const setPlayButtonAccessibleText = () => {
   const song = userData.currentSong;
