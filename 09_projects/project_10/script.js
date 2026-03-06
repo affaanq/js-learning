@@ -30,7 +30,7 @@ testButton.addEventListener("click", () => {
     let pattern = regexPattern.value;
     let flags = getFlags();
     let reg = new RegExp(pattern, flags);
-    let giveResult = stringToTest.textContent.match(reg)
+    let giveResult = stringToTest.textContent.match(reg) // this returns an array like object 
 
     if (giveResult === null) {
     let nullCondition = testResult.innerHTML = `no match`
@@ -38,7 +38,7 @@ testButton.addEventListener("click", () => {
   }
   else {
 
-    let highlights = stringToTest.textContent.replace(reg, (match) => `<span class="highlight">${match}</span>`)
+    let highlights = stringToTest.textContent.replace(reg, (match) => `<span class="highlight">${match}</span>`) // It returns a string 
     let joingArray = giveResult.join(", ")
     testResult.innerHTML = `${joingArray}`;
     stringToTest.innerHTML = highlights;
