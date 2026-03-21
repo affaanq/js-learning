@@ -27,4 +27,5 @@ function convertMarkdown() {
     htmlOutput.textContent = result;
     htmlPreview.innerHTML = result;
     return result
+    
 }
