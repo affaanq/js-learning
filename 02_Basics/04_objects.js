@@ -50,7 +50,7 @@ console.log(Object.entries(tinderUser)); // Returns an array of key/values of th
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); // TO check if the given property is in the object
 
 
- //Object destructuring
+ //Object destructuring methods
 const course = {
 
     coursename: "Learn python",
