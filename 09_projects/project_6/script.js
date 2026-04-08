@@ -8,7 +8,6 @@ const randomColor = function(){
         color += hex[Math.floor(Math.random() * 16)];
     }
         return color;
-
 };
 
     let Interval;
