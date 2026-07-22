@@ -15,7 +15,7 @@ console.log(myArr);
 
 myArr.pop() // Removes the last value in the Array
 myArr.unshift(9) // It will insert the given value to the Array in the first position
-myArr.shift() //It will remove the starting value of the Array
+myArr.shift() //It will remove the starting value of the Array, it does not take any arguments and always remove the first one!
 
 console.log(myArr.includes(9)); // It is T/F answer from the JS, id the given thing is present or not
 console.log(myArr.indexOf(9)); //It will give the index number of the given value

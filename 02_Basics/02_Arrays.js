@@ -30,7 +30,7 @@ console.log(Array.of(score1, score2, score3)); // Will put the values in a defin
 
 // We can use among of these methods:
 
-const notFilledArray = new  Array(3)
+const notFilledArray = new Array(3)
 
 const fixedLengthArray = Array.from({ length: 5 });
 console.log(fixedLengthArray.length); // 5
@@ -42,3 +42,7 @@ console.log(fixedLengthArray); // [undefined, undefined, undefined, undefined, u
 
 const filledArray = new Array(3).fill(0);
 console.log(filledArray); // [0, 0, 0]
+
+
+//  We always check the type of array before using .map and .filter by using this method
+Array.isArray(value)
