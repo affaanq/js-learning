@@ -12,7 +12,7 @@ console.log(gameName.__proto__); // It will give all the possible prototype of t
 console.log(gameName.length); //Will print the length of the string
 console.log(gameName.toUpperCase()); //Will convert the string to UpperCase
 console.log(gameName.charAt(2)); // Will check the position of that index of that character
-console.log(gameName.indexOf('t'));// Will check the position of that specific character
+console.log(gameName.indexOf('t')); // Will check the position of that specific character, it there are no chracters matched, it will print -1
 
 
 const NewString = gameName.substring(0, 4)
