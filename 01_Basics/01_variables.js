@@ -1,5 +1,5 @@
 const accountId = 144553 // const : cannot be changed
-let accountEmail = "affaan@gmail.com" //
+let accountEmail = "affaan@gmail.com" // Moat commonly used and can be altered later.
 var accountPassword = "12345" // Two ways of declaring a variables, var n let
 accountCity = "Glasgow"
 let accountState;
