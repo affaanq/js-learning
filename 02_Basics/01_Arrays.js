@@ -36,3 +36,21 @@ console.log("B ", myArr);
 const myn2 = myArr.splice(1, 3)
 console.log("C ", myArr);
 console.log(myn2); //It will includes the the last domain in the range and it manipulates the orignal array aswell..
+
+// Example:-
+
+const numbers = [0, 1, 2, 3, 4, 5];
+
+const sliced = numbers.slice(1, 3); 
+// Extracts index 1 and 2 (stops before index 3)
+
+console.log(sliced);  // [1, 2]
+console.log(numbers); // [0, 1, 2, 3, 4, 5] (Unchanged)
+
+const numbers = [0, 1, 2, 3, 4, 5];
+
+const spliced = numbers.splice(1, 3); 
+// Starts at index 1, DELETES 3 items (values 1, 2, 3)
+
+console.log(spliced); // [1, 2, 3] (The deleted items)
+console.log(numbers); // [0, 4, 5] (Original array modified!)
