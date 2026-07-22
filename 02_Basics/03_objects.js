@@ -1,5 +1,5 @@
 // Singleton: If we make it from a constructor, when we do not declare it like a literal
-//Object.create
+//Object.create file
 //Object Literals
 
 const mySym = Symbol("key1")

@@ -15,7 +15,7 @@ console.log(accountId);
 
 /*
 Prefer not to use var 
-cos of issue in block scope and functional scope..
+because of issue in block scope and functional scoping in the code
 */
 
 console.table([accountEmail, accountId, accountPassword, accountCity, accountState]) //it helps in printing the output more easily and prints it in a tabular form

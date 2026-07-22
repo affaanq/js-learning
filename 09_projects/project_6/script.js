@@ -8,7 +8,6 @@ const randomColor = function(){
         color += hex[Math.floor(Math.random() * 16)];
     }
         return color;
-
 };
 
     let Interval;
@@ -34,8 +33,3 @@ const randomColor = function(){
 
     
     document.querySelector("#stop").addEventListener("click", stopChangeColor)
-
-
-    
-
-    

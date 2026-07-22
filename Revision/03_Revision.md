@@ -1,5 +1,3 @@
-Understood—you want the whole README using only `#` and `##` headings (no `###`).
-
 ***
 
 # JavaScript Notes: Async, OOP, DOM Events, Timing
