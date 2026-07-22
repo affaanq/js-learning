@@ -1,7 +1,7 @@
-"use strict"; //Treat all JS code as newer versions
+"use strict"; // Treat all JS code as newer versions
 //alert("hello") // There is a diffrent syntax to use alert in the IDE (node.js) only possible in Browser
 
-// Readability is very important in Coding, It should be future proof
+// Readability is very important in Coding, It should be future proof and your peers should undderstand what you mean.
 
 let name = "Affaan"
 let age = 18
@@ -29,7 +29,8 @@ console.log(typeof null); //object
 const id = Symbol("123")
 const anotherId = Symbol("123")
 console.log(id === anotherId)
-
+// The symbol() always creates a uniue values, therefore both of them will never be the same.
+ 
 // Reference Type/ Non-Primitive
 // Arrays, Objects, Functions. 
 
