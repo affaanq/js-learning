@@ -8,7 +8,7 @@ const mySym = Symbol("key1")
 
 const JsUser = {
     name: "Affaan",
-    "full name": "Affaan Qureshi",// Not be able to access the value from JsUser.email
+    "full name": "Affaan Qureshi",// Not be able to access the value from JsUser. email
     [mySym]: "mykey1" , // Will not be used as a symbol, need to use in squared bracs
     age: 18,
     location: "Glasgow",

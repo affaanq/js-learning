@@ -17,7 +17,7 @@ const real_another_array = another_array.flat(Infinity) //It will concatinate al
 console.log(real_another_array);
 
 console.log(Array.isArray("Affaan")) // Will check if it is Array or not T/F answer
-console.log(Array.from("Affaan")) //Will convert the value to an Array
+console.log(Array.from("Affaan")) // Will convert the value to an Array
 
 let score1 = 100
 let score2 = 200
