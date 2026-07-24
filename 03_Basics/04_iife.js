@@ -1,4 +1,5 @@
 // Immedietely Invoked Function Expression (IIFE)
+// IIFE created a temporary "bubble" (a private scope). Anything declared inside stayed inside, keeping the global namespace clean
 
 (function chai(){
     // it is a named IIFE

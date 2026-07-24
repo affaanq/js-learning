@@ -71,7 +71,7 @@ function handleObject(anyObject) {
     console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
     
 }
-// We can use anyobject if we have multiple object and want to run it for individual objects
+// We can use any object if we have multiple object and want to run it for individual objects
 handleObject(user)
 handleObject({
     username: "Affaan",

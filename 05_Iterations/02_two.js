@@ -44,6 +44,9 @@ for (const greet of greetings) {
     console.log(greet);
 }
 
+// for...of --> Use for Iterables (Arrays, Strings, Sets, Maps). It pulls out VALUES.
+// for...in --> Use for Plain Objects. It pulls out KEYS (property names).
+
 // Maps in JS
 
 const map = new Map()
