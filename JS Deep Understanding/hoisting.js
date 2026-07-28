@@ -30,4 +30,6 @@ function getName() {
   1. undefined            → declared, but no value assigned yet (var)
   2. ReferenceError (TDZ) → declared with let/const, but not yet reached
   3. ReferenceError (not defined) → never declared anywhere in scope
+
+  - JS is a loosely/ Weekly type language, which means if we assign var a string we can further change it to something else like a number or etc.
 */
