@@ -21,7 +21,7 @@ if (true) {
     const secureConst = 30;
     
     debugger; 
-    // STOP HERE IN VS CODE. Look at your Scope panel:
+
     // - 'secureLet' and 'secureConst' exist inside a separate "Block" scope.
     // - 'leakVar' is NOT in the Block scope. It has hijacked the Global scope.
 }
@@ -77,7 +77,6 @@ const globalScope = 100;
     {
         const blockTwo = 300;
         debugger;
-        // STOP HERE IN VS CODE.
         // Look at the Scope chain. This inner block has access to blockOne and globalScope
         // because of the Lexical Environment chain.
         console.log(globalScope, blockOne, blockTwo); // 100, 200, 300
