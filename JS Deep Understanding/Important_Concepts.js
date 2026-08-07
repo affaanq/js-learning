@@ -31,4 +31,7 @@ We can access it like this:
 var counter1 = counter();
 counter1();
 
+-- Disadvatnage:
+--- Sometimes we have overconsumption of the memory and they are not garbage collected and can freeze the web if not solved;
+
 */
